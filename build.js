@@ -12,12 +12,12 @@ const start = `<!DOCTYPE html>
 
 const fs = require('node:fs');
 
+const postFiles = fs.readdirSync("post")
 
-const post1 = fs.readFileSync('post/terminalkurs.html', "utf8");
-const post2 = fs.readFileSync("post/autobuild.html", "utf8")
+const postContents = postFiles.map(f => fs.readFileSync("post/" + f, "utf8"))
 
 const slutt = `
 </body>
 </html>`
 
-fs.writeFileSync('index.html', start + post1 + post2 + slutt);
+fs.writeFileSync('index.html', start + postContents.join("\n") + slutt);
