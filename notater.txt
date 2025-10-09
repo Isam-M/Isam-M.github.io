@@ -3,7 +3,16 @@ index.html
 
 
 
+Tekster å lese
+==============
+
+Hvordan stille gode spørsmål:
 https://play.teod.eu/interaction-value-differential/
+
+Hvordan rydde i kode:
+https://jackrusher.com/journal/leopards-in-the-source-code.html
+
+
 
 
 Forslag til filstruktur for techbloggen til eksport
