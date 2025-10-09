@@ -1,0 +1,1 @@
+rg --files | grep -v index.html | entr -rc node ./build.js

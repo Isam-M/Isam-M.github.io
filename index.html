@@ -6,10 +6,10 @@
     <title>technotes</title>
 </head>
 <body>
-    <pre>
-   <h1>her skal mine notater være!!</h1> 
-    
-echo
+<h1>Tech notes fra team export</h1>
+<p>Team Eksport deler erfaringer, kunnskap og ting som er gøy.</p>
+<h2>her skal mine notater være!!</h2> 
+<pre>echo
 which 
 where  
 
@@ -21,8 +21,19 @@ mkdir (lager mappe)
 rm -rf
     -r tar mapper
     -f force
-    -rf force og ta mapper
+    -rf force og ta mapper</pre><h2>Hvordan automatisk kjøre programmer når filer endres</h2>
+<pre>
+    rg --files | grep -v index.html | entr -rc node ./build.js
 
-        </pre>
+    Krever:
+        ripgrep (brew install ripgrep)
+        entr (brew install entr)
+
+    Hvis du skal kjøre kommandoen i ditt eget script, må du gjøre scriptet kjørbart.
+    Det kan du gjøre med chmod +x.
+
+    For eksempel:
+
+        chmod +x ./mittscript</pre>
 </body>
 </html>
