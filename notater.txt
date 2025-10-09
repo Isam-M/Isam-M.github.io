@@ -3,6 +3,8 @@ index.html
 
 
 
+https://play.teod.eu/interaction-value-differential/
+
 
 Forslag til filstruktur for techbloggen til eksport
 ===================================================
